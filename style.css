@@ -1,0 +1,157 @@
+html {
+box-sizing: border-box;
+font-size: 13px;
+font-weight: 500;
+}
+
+*, *:after, *:before {
+box-sizing: inherit;
+}
+
+body {
+background-color: #E7EAEE;
+}
+
+/* layout styling session */
+
+
+.main-container {
+   
+    width: 100%;
+    height: 100%;
+    background-color: #E7EAEE;
+    padding: 20px;
+
+}
+.testimonial-grid {
+    margin-bottom: 25px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px;
+    box-shadow: 15px 15px 15px 1px rgba(156,124,124,0.75);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    z-index: 0;
+} 
+
+#grid-1 {
+    background-color: #733FC8;
+    width: 100%;
+    color: white;
+    position: relative;
+    z-index: 0;
+}
+
+#grid-2 {
+background-color: #48556A;
+width: 100%;
+color: white;
+
+}
+
+#grid-4 {
+background-color:#19212E;
+color: #ffffff;
+}
+
+/* design styling */
+.testimonial-text {
+font-size: 1.3em;
+font-weight: 600;
+}
+
+/*images and name stylinh*/
+
+.image-name img {
+border-radius: 50%;
+}
+
+.image-name {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+.reviewers-title {
+ margin-top: -9px;
+ margin-bottom: 10px;
+}
+.reviewers-name{
+    font-weight: 600;
+}
+.reviewers-name, .reviewers-title {
+    opacity: 70%;
+}
+.testimonial-grid p {
+opacity: 70%;
+}
+
+#grid-3, #grid-5 {
+    color: #36454f;
+    background-color: #ffffff;
+}
+
+#quote-bg{
+position: absolute;
+right: 15%;
+top: 3%;
+z-index: -1;
+width: 20%;
+}
+h4{
+ z-index: 1;
+}
+
+footer h4{
+    text-align: center;
+    color:#733FC8 ;
+    font-size: 1.2em;
+    font-family: "Barlow Semi Condensed", sans-serif;;
+}
+
+
+/* desktop design and layout styling is below */
+
+@media(min-width : 576px) {
+.main-container {
+    max-width: 2000px;
+    padding: 5%;
+    margin: 0%;
+}
+.testimonial-grid{
+    margin: 0%;
+}
+#sub-container-left {
+    flex : 75;
+    flex-direction: column;
+    height: 100%;
+}
+#sub-container-right {
+    flex : 25;
+}
+
+#top-section, #bottom-section {
+ height: 50%;
+}
+
+#grid-1, #grid-4 {
+    flex : 70;
+}
+#grid-2, #grid-3 {
+    flex : 30;
+}
+#grid-5 {
+width: 100%;
+height: 100%;
+}
+.main-container, #sub-container-left, #top-section, #bottom-section {
+    gap: 25px;
+    display: flex;
+} 
+#quote-bg{
+right: 10%;
+top: 0%;
+width: auto;
+}
+
+
+
+}
